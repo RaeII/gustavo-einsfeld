@@ -1,0 +1,197 @@
+input[type=button]
+,input[type=submit]
+,input[type=reset]
+,.button {
+	font-family:"Lato";
+	font-size:11px;
+	font-size:0.875rem;
+	font-weight:normal;
+	border:none;
+	padding: 5px;
+	margin-top:0px;
+	display:table;
+	color:#666;
+	background-color: #DDD;
+	border-radius:0px;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+	cursor:pointer;
+	outline:none;
+	border:none;
+	float:left;
+}
+
+form.pequeno input[type=button]
+,form.pequeno input[type=submit]
+,form.pequeno input[type=reset]
+,form.pequeno .button
+,input[type=button].pequeno
+,input[type=submit].pequeno
+,input[type=reset].pequeno
+,.button.pequeno {
+	font-size:10px;
+	font-size:0.625rem;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:4px;
+	padding-bottom:4px;
+	margin-left:2px;
+}
+form.grande input[type=button]
+,form.grande input[type=submit]
+,form.grande input[type=reset]
+,form.grande .button
+,input[type=button].grande
+,input[type=submit].grande
+,input[type=reset].grande
+,.button.grande {
+	font-size:18px;
+	font-size:1.125rem;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-left:5px;
+}
+input[type=button]:hover
+,input[type=submit]:hover
+,input[type=reset]:hover
+,.button:hover {
+	background-color: #E9E9E9;
+}
+input[type=button]:active
+,input[type=submit]:active
+,input[type=reset]:active
+,.button:active {
+	background-color: #EEE;
+}
+input[type=button]:disabled
+,input[type=submit]:disabled
+,input[type=reset]:disabled
+,.button:disabled
+,input[type=button][disabled=disabled]
+,input[type=submit][disabled=disabled]
+,input[type=reset][disabled=disabled]
+,.button[disabled=disabled] {
+	background-color:#EEE;
+	border:1px solid #DDD;
+	color:#AAA;
+	outline:none;
+}
+
+
+
+
+
+input[type=button].vermelho
+,input[type=submit].vermelho
+,input[type=reset].vermelho
+,.button.vermelho {
+	color:#FFF;
+	background-color: #FF0000;
+}
+input[type=button].vermelho:hover
+,input[type=submit].vermelho:hover
+,input[type=reset].vermelho:hover
+,.button.vermelho:hover {
+	background-color: #FF5555;
+}
+input[type=button].vermelho:active
+,input[type=submit].vermelho:active
+,input[type=reset].vermelho:active
+,.button.vermelho:active {
+	background-color: #FF7777;
+}
+
+
+
+
+
+input[type=button].verde
+,input[type=submit].verde
+,input[type=reset].verde
+,.button.verde {
+	color:#FFF;
+	background-color: #009900;
+}
+input[type=button].verde:hover
+,input[type=submit].verde:hover
+,input[type=reset].verde:hover
+,.button.verde:hover {
+	background-color: #00AB00;
+}
+input[type=button].verde:active
+,input[type=submit].verde:active
+,input[type=reset].verde:active
+,.button.verde:active {
+	background-color: #00CC00;
+}
+
+
+
+
+input[type=button].amarelo
+,input[type=submit].amarelo
+,input[type=reset].amarelo
+,.button.amarelo {
+	color:#000;
+	background-color: #FFCC29;
+}
+input[type=button].amarelo:hover
+,input[type=submit].amarelo:hover
+,input[type=reset].amarelo:hover
+,.button.amarelo:hover {
+	background-color: #FFDD3A;
+}
+input[type=button].amarelo:active
+,input[type=submit].amarelo:active
+,input[type=reset].amarelo:active
+,.button.amarelo:active {
+	background-color: #FFEE4B;
+}
+
+
+
+
+input[type=button].prata
+,input[type=submit].prata
+,input[type=reset].prata
+,.button.prata {
+	color:#FFF;
+	background-color: #D6A629;
+}
+input[type=button].prata:hover
+,input[type=submit].prata:hover
+,input[type=reset].prata:hover
+,.button.prata:hover {
+	background-color: #BE9F5A;
+}
+input[type=button].prata:active
+,input[type=submit].prata:active
+,input[type=reset].prata:active
+,.button.prata:active {
+	background-color: #CFAF6B;
+}
+
+
+
+
+input[type=button].preto
+,input[type=submit].preto
+,input[type=reset].preto
+,.button.preto {
+	color:#FFF;
+	background-color: #5C5C5C;
+}
+input[type=button].preto:hover
+,input[type=submit].preto:hover
+,input[type=reset].preto:hover
+,.button.preto:hover {
+	background-color: #6D6D6D;
+}
+input[type=button].preto:active
+,input[type=submit].preto:active
+,input[type=reset].preto:active
+,.button.preto:active {
+	background-color: #7E7E7E;
+}

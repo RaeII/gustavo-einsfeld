@@ -1,0 +1,114 @@
+input[type=text]
+,input[type=tel]
+,input[type=file]
+,input[type=password]
+,textarea
+,select {
+	font-size:14px;
+	font-size:0.875rem;
+	color:#5C5C5C;
+	background-color:#FFF;
+	border:1px solid #DDD;
+	outline:none;
+	border-radius:0px;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:7px;
+	padding-bottom:7px;
+	border-radius:0px;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+}
+form.pequeno input[type=text]
+,form.pequeno input[type=tel]
+,form.pequeno input[type=file]
+,form.pequeno input[type=password]
+,form.pequeno textarea
+,form.pequeno select
+,input[type=text].pequeno
+,input[type=file].pequeno
+,input[type=password].pequeno
+,textarea.pequeno
+,select.pequeno {
+	font-size:10px;
+	font-size:0.625rem;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:3px;
+	padding-bottom:3px;
+	margin-left:2px;
+}
+form.grande input[type=text]
+,form.grande input[type=tel]
+,form.grande input[type=file]
+,form.grande input[type=password]
+,form.grande textarea
+,form.grande select
+,input[type=text].grande
+,input[type=file].grande
+,input[type=password].grande
+,textarea.grande
+,select.grande {
+	font-size:18px;
+	font-size:1.125rem;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:9px;
+	padding-bottom:9px;
+	margin-left:5px;
+}
+input[type=text]::placeholder
+,input[type=tel]::placeholder
+,input[type=file]::placeholder
+,input[type=password]::placeholder
+,textarea::placeholder
+,select::placeholder {
+	color:#BBB;
+}
+input[type=text]:focus
+,input[type=tel]:focus
+,input[type=file]:focus
+,input[type=password]:focus
+,textarea:focus
+,select:focus {
+	background-color:#FFD;
+	border:1px solid #DD618B;
+	color:#5C5C5C;
+	outline:none;
+}
+input[type=text]:disabled
+,input[type=tel]:disabled
+,input[type=file]:disabled
+,input[type=password]:disabled
+,textarea:disabled
+,select:disabled {
+	background-color:#EEE;
+	border:1px solid #DDD;
+	color:#AAA;
+	outline:none;
+}
+
+
+label {
+	width:100%;
+	font-size:11px;
+	font-size:0.6875rem;
+	color:#5C5C5C;
+}
+form.pequeno label
+,label.pequeno {
+	font-size:9px;
+	font-size:0.5625rem;
+}
+form.grande label
+,label.grande {
+	font-size:12px;
+	font-size:0.75rem;
+}
+
+
+
+
+

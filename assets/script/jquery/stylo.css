@@ -1,0 +1,86 @@
+.carousel {
+	position:relative;
+	display:table;
+	width:100%;
+}
+.carousel ul {
+	list-style:none;
+	padding:0px;
+	width:100%;
+}
+.carousel ul li {
+	padding: 0px;
+	display: block;
+	float: left;
+	list-style:none;
+}
+.carousel .clearfix {
+	float: none;
+	clear: both;
+}
+.carousel .next {
+	width:11px;
+	height:17px;
+	background:url(dir_next.png) no-repeat center;
+	cursor:pointer;
+	float: right;
+}
+.carousel .prev {
+	width:11px;
+	height:17px;
+	background:url(dir_prev.png) no-repeat center;
+	cursor:pointer;
+	float: left;
+}
+.carousel .pager {
+	width:100%;
+	width:-webkit-calc(100% - 40px);
+	width:-moz-calc(100% - 40px);
+	width:calc(100% - 40px);
+	padding-left:20px;
+	padding-right:20px;
+	text-align: right;
+	cursor:pointer;
+	display:table;
+	margin-top:10px;
+}
+.carousel .pager a {
+	margin-left:5px;
+	text-decoration: none;
+}
+.carousel .pager a span {
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	color:#000;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	background-color:#CCC;
+	background: #CCC;
+}
+.carousel .pager a:hover span {
+	background: #DDD;
+}
+/*
+.carousel .pager a.selected span {
+	color:#FFF;
+	background: #C4170C;
+}
+*/
+.carousel .timer {
+	background-color: #DDD;
+	height: 3px;
+	width: 0px;
+	max-width:100%;
+	margin-top:-8px;
+}
+
+
+
+
+
+
+
+

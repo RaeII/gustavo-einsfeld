@@ -1,0 +1,196 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-bottom: 0 !important;
+
+}
+
+h1{
+    padding: 15px 0 0 29px;
+    font-size: 35px;
+}
+
+
+
+.container-conteudo{
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.conteudo{
+   width: 70%;
+   padding: 20px;
+}
+
+main{
+    height: 500px;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.destaque-imovel-container{
+    position: relative;
+    width: 30%;
+}
+
+.destaque-imovel{
+    position: sticky;
+    top: 20px;
+    padding: 20px;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 20px #2525255b;
+}
+
+#rigth-imovel{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 99;
+  font-size: 50px;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+#left-imovel{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 99;
+    font-size: 50px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.btn-contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 85%;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    background-color: #36c42a;
+    color: aliceblue;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-weight: 800;
+}
+
+.btn-agendar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width:85%;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    background-color: #ED3237;
+    color: aliceblue;
+    border-radius: 10px;
+    margin-top: 12px;
+    border: 0;
+    font-weight: 800;
+}
+
+.descricao-final{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    font-weight: 800;
+}
+
+.slick-imovel{
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-container{
+    padding: 0 20   px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.item-container .item{
+    margin: 10px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+.item-desc{
+    display: flex;
+}
+
+.item-des{  
+
+   font-size: 12px;
+   margin: -12px 0 0 0;
+   margin-bottom: 0px;
+   color: #202020bd;
+}
+
+.icon-item{
+    font-weight: 800;
+    margin-right:3px;
+    color:#20202082 ;
+    font-size: 28px;
+}
+
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descricao h3{
+  padding: 25px;
+
+}
+
+.descricao p{
+    padding: 0 25px;
+}
+
+.localizacao h3{
+  padding: 25px;
+}
+
+.localizacao p {
+    padding-left: 25px;
+}
+
+.map{
+    width: 95%;
+    height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 25px;
+    box-shadow: 0 0 10px #1d1d1d75;
+    margin-top: 10px;
+}
+
+.mais-imoveis{
+    width: 100%;
+    padding: 0 30px 0 50px;
+    display: flex;
+    justify-content: space-around;
+}
+

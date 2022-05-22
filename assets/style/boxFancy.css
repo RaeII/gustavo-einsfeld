@@ -1,0 +1,51 @@
+.fancybox {
+	cursor:pointer;
+}
+.boxFancy {
+	display:none;
+	padding:10px;
+}
+.boxFancy .conteudo {
+	font-size:12px;
+	font-size:0.75rem;
+	font-weight:normal;
+	color:#666;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.boxFancy .botoes {
+	display:table;
+	width:100%;
+	font-size:12px;
+	font-size:0.75rem;
+	color:#666;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:0px;
+	padding-right:0px;
+	border-top:1px solid #CDE;
+	text-align:right;
+	cursor:default;
+}
+.boxFancy .botoes>.msgform {
+	float:right;
+	padding-left:10px;
+}
+.boxFancy .botoes input[type=button] {
+	margin-left:5px;
+	float:left;
+}
+.boxFancy .conteudo input[type=text],.boxFancy .conteudo input[type=password],.boxFancy .conteudo input[type=file],.boxFancy .conteudo textarea,.boxFancy .conteudo select {
+	margin-top:5px;
+}
+.boxFancy form span {
+	color:#666;
+	padding-right:5px;
+}
+.boxFancy form td {
+	padding-top:2px;
+	padding-bottom:2px;
+}
+.boxFancy .conteudo td input[type=text],.boxFancy .conteudo td input[type=password],.boxFancy .conteudo td input[type=file],.boxFancy .conteudo td textarea,.boxFancy .conteudo td select {
+	margin-top:0px;
+}
