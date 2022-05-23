@@ -3,6 +3,11 @@
 	font-family: Lato,Helvetica,Arial,sans-serif;
 }
 
+body{
+	background-color: #ffffff !important;
+}
+
+
 header{
 	height: 110px;
 	width: 100%;
@@ -11,18 +16,68 @@ header{
 	z-index: 99;
 }
 
-header > ul{
+header > nav{
 	float: right;
 	height: 100%;
 	width: 500px;
 	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	
+    flex-direction: column;
+    align-items: center;
 }
 
+.info{
+	display: flex;
+	align-items: center;
+}
+
+.icofont-facebook{
+    color: #1925b1;
+    border: solid 1px #1925b1;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 26px;
+    margin: 0 6px;
+}
+
+.icofont-instagram{
+	font-size: 35px;
+	background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+}
+
+header > nav > ul{
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	margin-right: 26px;
+	flex: 1;
+	width: 100%;
+}
 header ul li{
 	list-style: none;
+}
+
+.whats{
+	padding: 16px 7px;
+    border: solid 1px #1e1e1e1f;
+    border-radius: 10px;
+    margin-top: 5px;
+    width: 304px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whats i {
+	color: #0cbb0a;
+}
+
+.whats span{
+	margin: 0 10px;
 }
 
 .logo{
