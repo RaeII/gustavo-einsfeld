@@ -61,6 +61,16 @@ header ul li{
 	list-style: none;
 }
 
+.icofont-whatsapp{
+	position: fixed;
+	right: 15px;
+	bottom:20px;
+	z-index: 99999;
+    font-size: 62px;
+    color: #2bbb36;
+
+}
+
 .whats{
 	padding: 16px 7px;
     border: solid 1px #1e1e1e1f;
