@@ -148,6 +148,31 @@
 				//$('.lazy').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 				//	console.log("nextSlide: "+nextSlide);
 				//});
+			
+		
+				$('.slick-cidade').slick({
+					infinite: true,
+                     speed: 500,
+                     fade: true,
+                     cssEase: 'linear'
+					//,lazyLoad: 'ondemand'
+					//,cssEase: 'linear'
+					//,centerMode: true
+					//,variableWidth: true
+					//,variableHeight: true
+					, draggable: true
+					, accessibility: false
+					, dots: false
+					, autoplay: true
+					, autoplaySpeed: 9000
+					//,slidesToScroll:true
+					, prevArrow: false	//"<div class='prev'></div>"
+					, nextArrow: false	//"<div class='next'></div>"
+					//,slidesToShow: 1
+					//,arrows: true
+					//,swipeToSlide: true
+				});
+				
 			});
 		</script>
 		<center>
@@ -1701,6 +1726,22 @@
 								style='text-decoration:none;'><input type='button' class='prata grande'
 									value='Ver todos os imóveis' style='float:none;' /></a></div>
 					</center>
+					<section class="sobre-cidade">
+					<div class="overf slick-cidade">
+						<div class="sobre-cidade-image" style="background-image:url(PAG-7-torres-vista-aerea.jpg);">
+							
+						</div>
+						<div class="sobre-cidade-image" style="background-image:url(https://torres.rs.gov.br/wp-content/uploads/2018/04/torres-6.jpg);">
+							
+						</div>
+						<div class="sobre-cidade-image" style="background-image:url(https://res.cloudinary.com/worldpackers/image/upload/c_fill,f_auto,q_auto,w_1024/v1/guides/article_cover/aipc1e6attbvvskjb5bx);">
+							
+						</div>
+						<div class="sobre-cidade-image" style="background-image:url(http://torres.rs.gov.br/wp-content/uploads/2018/03/diovulgaobalonismo-c-1024x656.jpg);">
+							
+						</div>
+					</div>
+					</section>
 					<footer class="center">
 						<div class="center" style="flex-direction: column;">
 							<img src="logo.jpeg" alt="">
