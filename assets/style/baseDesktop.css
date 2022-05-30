@@ -266,7 +266,7 @@ a {
 	margin-right:5px;
 }
 .site>.sRodape .conteudo:nth-child(2) {
-	width:1200px;
+
 	display:table;
 	text-align:center;
 	padding-top:20px;
@@ -333,7 +333,7 @@ a {
 
 
 .site>.sConteudo>center>.bloco {
-	width:1200px;
+	
 	display:table;
 	position:relative;
 	text-align:left;

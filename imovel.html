@@ -44,7 +44,37 @@
             <li>Contato</li>
         </ul>
 	</nav>
+    <button
+	class="menu"
+	onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+	aria-label="Main Menu"
+  >
+	<svg width="70" height="70" viewBox="0 0 100 100">
+	  <path
+		class="line line1"
+		d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+	  />
+	  <path class="line line2" d="M 20,50 H 80" />
+	  <path
+		class="line line3"
+		d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+	  />
+	</svg>
+  </button>
     </header>
+
+  <div class="menu-resp">
+	<nav>
+	  <ul>
+		<li>Home</li>
+		<li>Viagens</li>
+		<li>Atividades</li>
+		<li>Sobre Nós</li>
+		<li>Blog</li>
+		<li>Contato</li>
+	  </ul>
+	</nav>
+  </div>
     <h1>Casa a venda em Torres</h1>
     <p style="padding-left:35px">HOME > CASA > TORRES > <strong style="color:red;">CASA2541</strong></p>
     <div class="container-conteudo">
@@ -70,6 +100,34 @@
                         style="background-image: url(https://cornettaarquitetura.com.br/wp-content/uploads/2017/08/loft-lofts-industrial-casas-modernas-clean-madeira-vidro-estruturas-metalicas-jardim-vertical-interno-sala.jpg); height: 500px">
                     </div>
                 </main>
+            </div>
+            <div class="destaque-imovel destaque-resp">
+                <div class="">
+                    <p>Valor à vista</p>
+                    <p style="font-size: 1.5rem !important;line-height: 2rem !important;font-weight: 600;">
+                        R$ 1.550.000,00
+                    </p>
+                    <div style="display: flex;flex-direction: column;">
+                        <div class=""></div>
+                        <a id="" href="1" target="_blank" rel="noreferrer noopener" class="btn-contato">
+                            <i style="font-size: 25px;margin-right: 7px;" class="icofont-brand-whatsapp"></i>
+                            <span>Entrar em contato</span>
+                        </a>
+                        <button class="btn-agendar">Agendar visita</button>
+                        <div style="text-align: center;font-size: 13px;color: #000000ab;">
+                            <p style="text-align: center;">Visita imediata!</p>
+                            <p style="text-align: center;">Você pode visitar este imóvel ainda hoje</p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 30px;" class="descricao-final">
+                        <div>Condomínio</div>
+                        <div class="">R$ 1.262,17</div>
+                    </div>
+                    <div class="descricao-final">
+                        <div>IPTU</div>
+                        <div class="">R$ 3.690,24</div>
+                    </div>
+                </div>
             </div>
             <div class="item-container">
                 <div class="item">
@@ -166,9 +224,9 @@
             </div>
         </div>
     </div>
-    <section>
+    <section >
         <h4 style="padding: 0 0 17px 85px;">Imóveis relacionado</h4>
-        <div class="mais-imoveis">
+        <div class="mais-imoveis slick-cards">
             
             <a href='imovel.html'>
                 <div class='produtobox'>
@@ -287,7 +345,7 @@
     </div>  
     </section>
     <footer >
-        <div class="center" style="flex-direction: column;">
+        <div class="center logo-footer" >
             <img src="logo.jpeg" alt="">
             
         </div>
@@ -309,7 +367,8 @@
             <p>contato@gustavoimoveis.net</p>
         </div>
     </footer>
-     <div style="font-size: 14px;">© Copyright 2022 - Gustavo-Einsfeld - Todos os direitos reservados</div>
+    <div style="font-size: 14px;  padding: 5px 20px;">© Copyright 2022 - Gustavo-Einsfeld - Todos os direitos reservados</div>
+    <div class="infos-digital"><img src="logoinfos_preta.png" alt=""></div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -322,7 +381,7 @@
         crossorigin="anonymous"></script>
     <script src="assets/multselect/slick.min.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="assets/script/jquery/jquery.carouFredSel-6.1.0-packed.js"></script>
-    <script src="script/script.js"></script>
+    <script src="assets/script/script.js"></script>
 
     <script type="text/javascript">
         $(function () {
@@ -351,6 +410,35 @@
             //$('.lazy').on('beforeChange', function(event, slick, currentSlide, nextSlide){
             //	console.log("nextSlide: "+nextSlide);
             //});
+
+            $('.slick-cards').slick({
+					infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+				 	//,lazyLoad: 'ondemand'
+					//,cssEase: 'linear'
+					//,centerMode: true
+					//,variableWidth: true
+					//,variableHeight: true
+					, draggable: true
+					, accessibility: false
+					, dots: false
+					, autoplay: true
+					, autoplaySpeed: 4000
+					, speed: 1500
+					//,slidesToScroll:true
+					, prevArrow: false	//"<div class='prev'></div>"
+					, nextArrow: false	//"<div class='next'></div>"
+					,responsive: [
+                    {
+                      breakpoint: 600,
+                      settings: {
+					    centerMode: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                      }
+                    }]
+				});
         });
     </script>
 </body>

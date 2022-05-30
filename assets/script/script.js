@@ -1,6 +1,20 @@
 
 //FunÃ§Ã£o que carrega imagens junto com o browser
 //USO: coocar dentro do body : onLoad="MM_preloadImages('img/bot_2.jpg');"
+$(function () {
+	var count = 0;
+	$(".menu").click(function () {
+	  $(".menu-resp").toggleClass("menu-resp-anime").css("filter", "blur(0px)");
+	  if (count == 0) {
+		$("#blur").css("filter", "blur(6px)");
+		count++;
+	  } else {
+		$("#blur").css("filter", "blur(0px)");
+		count = 0;
+	  }
+	});
+  });
+  
 function MM_findObj(n,d) { //v4.01
 	var p,i,x;
 	if(!d){

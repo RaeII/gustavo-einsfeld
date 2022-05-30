@@ -400,15 +400,7 @@ $(function(){
 		var position = boxCompare.position();
 		var bottom = $(window).height() - position.top - boxCompare.height();
 		
-		if(total>1 && bottom<-50){
-			boxCompare.animate({
-				bottom: '0px',
-			}, 1200);
-		}else if(total<=1 && bottom>-50){
-			boxCompare.animate({
-				bottom: '-150px',
-			}, 1200);
-		}
+		
 	}
 	$().sCompare();
 

@@ -20,20 +20,21 @@
 	<link rel="stylesheet" href="assets/style/style.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="assets/style/icofont.min.css" type="text/css" media="screen" />
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-	<script type="text/javascript" src="assets/script/script.js" charset="UTF-8"></script>
-	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<!-- JQUERYs
-	<script type="text/javascript" src="jquery/jquery-1.8.0.min.js"></script> -->
+	
+	 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> 
+	<script src="assets/script/jquery/jquery.js"></script>
+	 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+	<!-- JQUERYs  -->
+	<script type="text/javascript" src="jquery/jquery-1.8.0.min.js"></script> 
 	<script type="text/javascript" src="assets/script/jquery/jquery.maskMoney.js"></script>
 	<script type="text/javascript" src="assets/script/jquery/funcoesform.js"></script>
 	<script type="text/javascript" src="assets/script/jquery/funcoes.js"></script>
 	<script type="text/javascript" src="assets/script/jquery/funcoesSite.js"></script>
-	<!--
+	<script type="text/javascript" src="assets/script/script.js" charset="UTF-8"></script>
+	
   <script type="text/javascript" src="jquery/jquery.animate-colors-min.js"></script>
   <script type="text/javascript" src="jquery/jquery.animate-colors.js"></script>
-	-->
+	
 	<!-- FANCYBOX -->
 	<script type="text/javascript" src="assets/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
 	<script type="text/javascript" src="assets/fancybox/jquery.fancybox.js?v=2.1.0"></script>
@@ -63,9 +64,9 @@
 	<link rel="stylesheet" type="text/css" href="assets/multselect/slick.css">
 	<link rel="stylesheet" type="text/css" href="assets/multselect/slick-theme.css">
 	<script src="assets/multselect/slick.min.js" type="text/javascript" charset="utf-8"></script>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap" rel="stylesheet"> 
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+ <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap" rel="stylesheet">  
 
 </head>
 
@@ -92,7 +93,37 @@
             <li>Contato</li>
         </ul>
 	</nav>
+	<button
+	class="menu"
+	onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+	aria-label="Main Menu"
+  >
+	<svg width="70" height="70" viewBox="0 0 100 100">
+	  <path
+		class="line line1"
+		d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+	  />
+	  <path class="line line2" d="M 20,50 H 80" />
+	  <path
+		class="line line3"
+		d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+	  />
+	</svg>
+  </button>
     </header>
+
+  <div class="menu-resp">
+	<nav>
+	  <ul>
+		<li>Home</li>
+		<li>Viagens</li>
+		<li>Atividades</li>
+		<li>Sobre Nós</li>
+		<li>Blog</li>
+		<li>Contato</li>
+	  </ul>
+	</nav>
+  </div>
 	<div class="site" style="position: absolute;">
 		<script type="text/javascript">
 			$(function () {
@@ -141,9 +172,15 @@
 					//,slidesToScroll:true
 					, prevArrow: false	//"<div class='prev'></div>"
 					, nextArrow: false	//"<div class='next'></div>"
-					//,slidesToShow: 1
-					//,arrows: true
-					//,swipeToSlide: true
+					,responsive: [
+                    {
+                      breakpoint: 600,
+                      settings: {
+					    centerMode: true,
+                        slidesToShow: 1.05,
+                        slidesToScroll: 1
+                      }
+                    }]
 				});
 				//$('.lazy').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 				//	console.log("nextSlide: "+nextSlide);
@@ -167,15 +204,14 @@
 					, autoplaySpeed: 9000
 					//,slidesToScroll:true
 					, prevArrow: false	//"<div class='prev'></div>"
-					, nextArrow: false	//"<div class='next'></div>"
-					//,slidesToShow: 1
-					//,arrows: true
-					//,swipeToSlide: true
-				});
-				
-			});
-		</script>
-		<center>
+	                , nextArrow: false	//"<div class='next'></div>"
+	              
+	            });
+							
+	                			
+	    });
+	                	</script>
+	                	<center>
 			<i class="icofont-whatsapp"></i>
 			<div style="width:100%;height:400px; overflow:hidden;">
 				<div class="slick-codepen" style="width:100%; height:400px;margin:0px; position:relative;">
@@ -292,10 +328,11 @@
 
 				<div class="pesquisatopo normal">
 					<div class="titulo">Encontre agora mesmo seu imóvel</div>
-					<form class="form-main" name='pesquisaprincipal' onSubmit='this.Pesquisar.click(); return false;'>
+					<form class="form-main" name='pesquisaprincipal' return false;'>
 						<div>
-							<table border="0" cellspacing="0" cellpadding="0" style="margin-top:10px;">
-								<tr>
+							<table class="table-pesquisa" border="0" cellspacing="0" cellpadding="0" style="margin-top:10px;">
+								<tbody class="tbody-pesquisar">
+								<tr  class="tr-pesquisa">
 									<td valign="top" align="left" style="width:170px;padding-right:10px;">
 										<label>Finalidade:</label>
 										<select name="finalidade" style="width:170px;" class="selectmultiple"
@@ -375,6 +412,7 @@
 										<button class="btn-buscar"><i class="icofont-search-1"></i>Buscar</button>
 									</td>
 								</tr>
+							</tbody>
 							</table>
 						</div>
 					</form>
@@ -1731,9 +1769,9 @@
 						<div class="content-cidade">
 
 						
-						<div class="map-local">
+						<!-- <div class="map-local">
 							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13912.144629068443!2d-49.728512!3d-29.3399361!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x19d51ec97619de68!2sGustavo%20Einsfeld%20-%20Corretor%20de%20Im%C3%B3veis!5e0!3m2!1spt-PT!2sbr!4v1653432741622!5m2!1spt-PT!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-						</div>
+						</div> -->
 					<div class="overf slick-cidade">
 						
 						<div class="sobre-cidade-image" style="background-image:url(PAG-7-torres-vista-aerea.jpg);">
@@ -1761,7 +1799,7 @@
 			</div>			
 					</section>
 					<footer >
-						<div class="center" style="flex-direction: column;">
+						<div class="center logo-footer" >
 							<img src="logo.jpeg" alt="">
 							
 						</div>
@@ -1783,7 +1821,8 @@
                             <p>contato@gustavoimoveis.net</p>
 						</div>
 					</footer>
-                     <div style="font-size: 14px;">© Copyright 2022 - Gustavo-Einsfeld - Todos os direitos reservados</div>
+					<div style="font-size: 14px;  padding: 5px 20px;">© Copyright 2022 - Gustavo-Einsfeld - Todos os direitos reservados</div>
+					<div class="infos-digital"><img src="logoinfos_preta.png" alt=""></div>
 
 
 
