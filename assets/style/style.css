@@ -5,7 +5,6 @@
 body {
   background-color: #ffffff !important;
   position: relative;
-  overflow-x: hidden;
 }
 
 header {
@@ -2553,7 +2552,7 @@ input[type="button"].grande {
     width: 100%;
   }
   .slick-cards {
-   width: 100vw;
+   width: 100%;
   }
   .site > .sPesquisa .conteudo {
     max-width: 100% !important;
