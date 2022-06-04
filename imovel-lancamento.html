@@ -129,6 +129,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="item-container">
                 <div class="item">
                     <div class="item-desc center" style="height:55.5px;"><span>N°</span>4521452</div>
@@ -171,6 +172,46 @@
 
             </div>
 
+            <div class="container-ficha">
+                <h3>Ficha técnica</h3>
+             <div class="item-ficha"><span><i class="icofont-rounded-right"></i>Nome</span>Puerto Madero</div>
+
+             <div class="item-ficha"><span><i class="icofont-rounded-right"></i>Endereço</span>Rua Osvaldo Aranha</div>
+
+             <div class="item-ficha"><span><i class="icofont-rounded-right"></i>Cidade</span>Torres</div>
+
+             <div class="item-ficha"><span><i class="icofont-rounded-right"></i>Bairro</span>Praia Grande</div>
+
+             <div class="item-ficha"><span><i class="icofont-rounded-right"></i>Previsao</span>2025</div>
+
+             <div class="item-ficha"><span><i class="icofont-rounded-right"></i>Situação</span>Constora</div>
+
+             <div class="item-ficha"><span><i class="icofont-rounded-right"></i>Construtora</span>T2</div>
+
+
+
+            </div>
+            <div class="container-opcoes">
+                <a href="#proposta" data-toggle="modal" >
+                <div class="contt cont1">
+                    <i class="icofont-email"></i>
+                    Fazer uma proposta
+                </div></a>
+                <div class="contt cont2" >
+                    <i class="icofont-print"></i>
+                    Iprimir a ficha do imovel
+                </div>
+                <a href="#financiamento"  data-toggle="modal">
+                <div class="contt cont3">
+                    <i class="icofont-dollar-true"></i>
+                    Opçoes de financiamento
+                </div></a>
+                <a href="#financiamento" data-toggle="modal">
+                <div class="contt cont4">
+                    <i class="icofont-speech-comments"></i>
+                    Indicar imóvel para um amigo
+                </div></a>
+            </div>
             <div class="descricao">
                 <h3>Mais sobre o imóvel</h3>
                 <p>t is a long established fact that a reader will be distracted by the readable content of a page when
@@ -222,6 +263,8 @@
                     </div>
                 </div>
             </div>
+           
+              
         </div>
     </div>
     <section >
@@ -355,6 +398,97 @@
             </div>
     </div>  
     </section>
+    <div class="modal fade" id="proposta" tabindex="-1" role="dialog" aria-labelledby="proposta"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+
+                <h5 class="modal-title" >Alterar Cortesia Reserva</h5>
+
+
+            </div>
+
+            <div class="modal-body">
+                <form class="form-in" action="" method="post" enctype="multipart/form-data">
+                    <div class="error" id="error"></div>
+                    <label for="nome">Nome</label>
+                    <input type="text" autocomplete="none" id='nome' name="item[nome]" placeholder="Nome Completo" required value="">
+        
+                    <label for="nome">E-mail</label>
+                    <input type="email" name="item[email]" id='email' placeholder="Email" required value="">
+        
+                    <label for="nome">Celular</label>
+                    <input type="tel" name="item[telefone]" required id="tel" placeholder="(99) 999999999" value='' required>
+
+                    <label for="nome">Proposta</label>
+                    <input type="tel" name="item[Proposta]" required id="prop" placeholder="Envie sua proposta" value='' required>
+                    <button type="submit" class="btn btn-modall" id='btn'>Enviar</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="modal fade" id="financiamento" tabindex="-1" role="dialog" aria-labelledby="financiamento"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+
+
+            <h5 class="modal-title" >Alterar Cortesia Reserva</h5>
+
+
+        </div>
+
+        <div class="modal-body">
+            <form class="form-in" action="db.php?acao=inscricao" method="post" enctype="multipart/form-data">
+                <div class="error" id="error"></div>
+                <label for="nome">Nome</label>
+                <input type="text" autocomplete="none" id='nome' name="item[nome]" placeholder="Nome Completo" required value="">
+    
+                <label for="nome">E-mail</label>
+                <input type="email" name="item[email]" id='email' placeholder="Email" required value="">
+    
+                <label for="nome">Nome do amigo</label>
+                <input type="tel" name="item[amigo]" required id="tel" placeholder="Nome do amigo" value='' required>
+
+                <label for="nome">Email do amigo</label>
+                <input type="tel" name="item[email-amigo]" required id="prop" placeholder="Email do amigo" value='' required>
+                <button type="submit" class="btn btn-modall" id='btn'>Enviar</button>
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<div class="modal fade" id="indicar" tabindex="-1" role="dialog" aria-labelledby="indicar"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+
+
+    <div class="modal-content">
+        
+    </div>
+
+</div>
+
+</div>
     <footer >
         <div class="center logo-footer" >
             <img src="logo.jpeg" alt="">
@@ -434,7 +568,7 @@
 					, draggable: true
 					, accessibility: false
 					, dots: false
-					, autoplay: true
+					, autoplay: false
 					, autoplaySpeed: 4000
 					, speed: 1500
 					//,slidesToScroll:true
@@ -444,6 +578,16 @@
                     {
                       breakpoint: 600,
                       settings: {
+                        centerMode: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                        ,centerMode: true
+                      } 
+                    },
+                    {
+                      breakpoint: 400,
+                      settings: {
+                        centerMode: false,
                         slidesToShow: 1,
                         slidesToScroll: 1
                       }

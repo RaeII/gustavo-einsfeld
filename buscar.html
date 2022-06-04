@@ -67,7 +67,9 @@
 			rel="stylesheet">
 
 	</head>
-     <div class="btn-pesquisar"><i class="icofont-search-property"></i></div>
+	<a href="#buscar" data-toggle="modal" >
+     <div class="btn-pesquisar "><i class="icofont-search-property"></i></div>
+	</a>
 	<body style="margin:0px; padding:0px;">
 		<header>
 			<div class="logo">
@@ -91,6 +93,9 @@
 					<li>Contato</li>
 				</ul>
 			</nav>
+			<a href="#buscar" data-toggle="modal" >
+			<div class="btn-pesquisar btn-pesquisar-resp"><i class="icofont-search-property"></i></div>	
+			</a>
 			<button
 				class="menu"
 				onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded',
@@ -119,9 +124,8 @@
 					<div class="menu-resp">
 						<nav>
 							<ul>
-								<li>Home</li>
-								<li>Encontre seu imóvel</li>
-								<li>Anuncie</li>
+								<a href="index.html"><li>Home</li></a>
+								<a href="buscar.html"><li>Encontre seu imóvel</li></a>
 								<li>Sobre Nós</li>
 								<li>Contato</li>
 							</ul>
@@ -134,6 +138,7 @@
 	
 	   
 						        <div class="conteudo-busca">
+									<h1  style="font-size: 25px;text-align: center;width: 100%;text-align: left;padding-bottom: 14px;margin-top: 0;">Resultado da busca</h1>
 									<a href='imovel.html'>
 										<div class='produtobox'>
 											<div style="position: relative;" class='imagem'>
@@ -311,7 +316,124 @@
 										</div>
 									</a>
 								</div>
-								
+						<div class="modal fade" id="buscar" tabindex="-1" role="dialog" aria-labelledby="proposta"
+								aria-hidden="true">
+								<div class="modal-dialog" role="document">
+							
+							
+									<div class="modal-content">
+							
+										<div class="modal-header">
+							
+							
+											<h5 class="modal-title" >Encontre agora mesmo seu imóvelEncontre agora mesmo seu imóvel</h5>
+										</div>
+							
+										<div class="modal-body">
+											<div class="pesquisatopo normal">
+												<form class="form-main" name='pesquisaprincipal' return false;'>
+													<div>
+														<table class="table-pesquisa" border="0" cellspacing="0"
+															cellpadding="0" style="margin-top:10px;">
+															<tbody class="tbody-pesquisar">
+																<tr class="tr-pesquisa">
+																	<td valign="top" align="left"
+																		style="width:170px;padding-right:10px;">
+																		<label>Finalidade:</label>
+																		<select name="finalidade" style="width:170px;"
+																			class="selectmultiple"
+																			multiple="multiple">
+																			<option value='comprar'>Comprar</option>
+																		</select>
+																	</td>
+																	<td valign="top" align="left"
+																		style="width:170px;padding-left:10px;padding-right:10px;">
+																		<label>Tipo:</label>
+																		<select name="tipo" style="width:170px;" class="selectmultiple"
+																			multiple="multiple">
+																			<option value='Apartamento'>Apartamento</option>
+																			<option value='Casa'>Casa</option>
+																			<option value='Casa-Geminada'>Casa Geminada</option>
+																			<option value='Cobertura'>Cobertura</option>
+																			<option value='Comercial-e-Residencial'>Comercial e Residencial</option>
+																			<option value='Lote'>Lote</option>
+																			<option value='Predio'>Prédio</option>
+																			<option value='Sitio'>Sí­tio</option>
+																			<option value='Terreno'>Terreno</option>
+																		</select>
+																	</td>
+																	<td valign="top" align="left"
+																		style="width:230px;padding-left:10px;padding-right:10px;">
+																		<label>Cidade:</label>
+																		<select name="cidade" style="width:230px;"
+																			class="selectmultiple"
+																			multiple="multiple">
+																			<option value='Ararangua-SC'>Araranguá/SC</option>
+																			<option value='Balneario-Gaivota-SC'>Balneário Gaivota/SC</option>
+																			<option value='Criciuma-SC'>Criciúma/SC</option>
+																			<option value='Santa-Rosa-do-Sul-SC'>Santa Rosa do Sul/SC</option>
+																			<option value='Sao-Joao-do-Sul-SC'>São João do Sul/SC</option>
+																			<option value='Sombrio-SC'>Sombrio/SC</option>
+																		</select>
+																	</td>
+																	<td valign="top" align="left"
+																		style="width:230px;padding-left:10px;padding-right:10px;">
+																		<label>Bairro:</label>
+																		<select name="bairro" style="width:230px;"
+																			class="selectmultiple"
+																			multiple="multiple">
+																			<option value='Anita-Garibaldi'>Anita Garibaldi</option>
+																			<option value='Centro'>Centro</option>
+																			<option value='Furnas'>Furnas</option>
+																			<option value='Itapua'>Itapuã</option>
+																			<option value='Januaria'>Januária</option>
+																			<option value='Jardim-Ultramar'>Jardim Ultramar</option>
+																			<option value='Lagoa-de-Fora'>Lagoa de Fora</option>
+																			<option value='Nova-Brasilia'>Nova Brasília</option>
+																			<option value='Nova-Guarita'>Nova Guarita</option>
+																			<option value='Parque-das-Avenidas'>Parque das Avenidas</option>
+																			<option value='Parque-Rosita'>Parque Rosita</option>
+																			<option value='Praia-Janaina'>Praia Janaina</option>
+																			<option value='Praia-Lagoa-Cortada'>Praia Lagoa Cortada</option>
+																			<option value='Raizeira'>Raizeira</option>
+																			<option value='Rio-Novo'>Rio Novo</option>
+																			<option value='Sanga-da-Toca-II'>Sanga da Toca II</option>
+																			<option value='Santa-Fe'>Santa Fé</option>
+																			<option value='Sao-Francisco'>São Francisco</option>
+																			<option value='Sao-Jose'>São José</option>
+																			<option value='Sao-Luiz'>São Luiz</option>
+																			<option value='Sao-Pedro'>São Pedro</option>
+																			<option value='Tres-Coqueiros'>Três Coqueiros</option>
+																			<option value='Turimar'>Turimar</option>
+																			<option value='Vila-Conceicao'>Vila Conceição</option>
+																			<option value='Village-Dunas'>Village Dunas</option>
+																			<option value='Village-Dunas-Norte'>Village Dunas Norte</option>
+																			<option value='Village-Dunas-Oeste'>Village Dunas Oeste</option>
+																		</select>
+																	</td>
+																	<td valign="top" align="left"
+																		style="width:100px;padding-left:10px;padding-right:10px;">
+																		<label>Código:</label>
+																		<input type="text" name="codigo" style="width:100px;"
+																			autocomplete="off">
+																	</td>
+																	<td valign="top" align="center"
+																		style="width:110px;padding-top:20px;">
+																		<button class="btn-buscar"><i class="icofont-search-1"></i>Buscar</button>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</form>
+											</div>
+							
+										</div>
+							
+									</div>
+							
+								</div>
+							</div>
 							
 								<footer>
 									<div class="footer-container">
