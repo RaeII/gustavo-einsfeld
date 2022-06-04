@@ -1216,8 +1216,22 @@ margin: auto;
   width: 360px;
   margin: 15px;
 }
+
+.btn-pesquisar{
+  position: fixed;
+  top: 130px;
+  right: 15px;
+  background-color: #f5f5f5;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 15px 15px 15px;
+  box-shadow: 2px 2px 5px #a9a9a9b8;
+  font-size: 55px;
+}
+
 .produtobox > .imagem {
-  width: 325px;
   height: 220px;
   background-position: center;
   background-repeat: no-repeat;
@@ -1263,6 +1277,14 @@ margin: auto;
   position: absolute;
   left: 0px;
   top: 0px;
+}
+
+.conteudo-busca{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   padding: 40px 80px 30px 40px;
 }
 .produtobox > .favorito {
   height: 32px;
